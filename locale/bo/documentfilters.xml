@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+
+	<entity id="creationdateperiodfilter-label">
+		<locale lang="fr">période d'inscription</locale>
+		<locale lang="en">clients having registered in a given period</locale>
+	</entity>
+	<entity id="creationdateperiodfilter-text">
+		<locale lang="fr">les clients qui se sont inscrits {period}</locale>
+		<locale lang="en">clients having registered in {period}</locale>
+	</entity>
+	
+	
+	
+	<entity id="orderlinefilter-label">
+		<locale lang="fr">propriété d'une ligne de commande</locale>
+		<locale lang="en">filter on an ordered item</locale>
+	</entity>
+	<entity id="orderlinefilter-text">
+		<locale lang="fr">les clients qui ont {count} commandes {status} ayant une ligne avec {field}</locale>
+		<locale lang="en">having {count} {status} orders with the item {field}</locale>
+	</entity>
+	
+	
+	
+	<entity id="creationdateperiodorderfilter-label">
+		<locale lang="fr">période de la commande</locale>
+	</entity>
+	<entity id="creationdateperiodorderfilter-text">
+		<locale lang="fr">les commandes qui ont été passées {period}</locale>
+	</entity>
+	
+	
+	
+	<entity id="CustomerInGroupCartFilter-label">
+		<locale lang="fr">clients appartenant à un groupe</locale>
+	</entity>
+	<entity id="CustomerInGroupCartFilter-text">
+		<locale lang="fr">les paniers des clients appartenant à l'un des groupes suivants : {group}</locale>
+	</entity>
+	<entity id="parameter.Cart-customer-group">
+		<locale lang="fr">Groupe client</locale>
+	</entity>
+	
+	
+	
+	<entity id="CustomerPropertyCartFilter-label">
+		<locale lang="fr">informations du client</locale>
+	</entity>
+	<entity id="CustomerPropertyCartFilter-text">
+		<locale lang="fr">les paniers des clients qui ont {field}</locale>
+		<locale lang="en">clients having {field}</locale>
+	</entity>
+	
+	
+	<entity id="usedcouponcountfilter-label">
+		<locale lang="fr">nombre de coupons utilisés</locale>
+		<locale lang="fr">filter on the number of coupons used</locale>
+	</entity>
+	<entity id="usedcouponcountfilter-text">
+		<locale lang="fr">les clients qui ont utilisé {count} coupons</locale>
+		<locale lang="en">having used {count} coupons</locale>
+	</entity>
+</localization>
