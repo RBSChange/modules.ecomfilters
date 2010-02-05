@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.rbs.fr/schema/change-component/1.0 http://www.rbschange.fr/static/schema/change-component/1.0.xsd">
 	<name>ecomfilters</name>
 	<type>change-module</type>
-	<version>3.0.0</version>
+	<version>3.0.1</version>
 	<license>com</license>
 	<repository>public</repository>
 	<description>Filtres e-commerce avancés</description>
@@ -13,42 +13,49 @@
 			<name>change-lib/framework</name>
 			<versions>
 				<version>3.0.0</version>
+				<version>3.0.1</version>
 			</versions>
 		</dependency>
 		<dependency>
 			<name>change-module/catalog</name>
 			<versions>
 				<version>3.0.0</version>
+				<version>3.0.1</version>
 			</versions>
 		</dependency>
 		<dependency>
 			<name>change-module/customer</name>
 			<versions>
 				<version>3.0.0</version>
+				<version>3.0.1</version>
 			</versions>
 		</dependency>
 		<dependency>
 			<name>change-module/order</name>
 			<versions>
 				<version>3.0.0</version>
+				<version>3.0.1</version>
 			</versions>
 		</dependency>
 		<dependency>
 			<name>change-module/marketing</name>
 			<versions>
 				<version>3.0.0</version>
+				<version>3.0.1</version>
 			</versions>
 		</dependency>
 		<dependency>
 			<name>change-module/payment</name>
 			<versions>
 				<version>3.0.0</version>
+				<version>3.0.1</version>
 			</versions>
 		</dependency>
 		<dependency>
 			<name>change-module/shipping</name>
 			<versions>
 				<version>3.0.0</version>
+				<version>3.0.1</version>
 			</versions>
 		</dependency>
 	</dependencies>
