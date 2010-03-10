@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/customer/persistentdocument/import/customer_binding.xml" />
+	<rootfolder module="customer">
+		<dynamiccustomergroup byLabel="Exemple de groupe client dynamique" description="Clients inscrits cette année." query='[{"class":"ecomfilters_CreationDatePeriodFilter","parameters":{"period":[null,null,"thisyear"]}}]' />
+	</rootfolder>
+</script>
