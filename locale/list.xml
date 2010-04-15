@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+	<entity id="more-less-description">
+		<locale lang="fr">plus ou moins</locale>
+		<locale lang="en">more or less</locale>
+	</entity>
+	<entity id="more-less-label">
+		<locale lang="fr">plus ou moins</locale>
+		<locale lang="en">more or less</locale>
+	</entity>
+	<entity id="more">
+		<locale lang="fr">plus de</locale>
+		<locale lang="en">more than</locale>
+	</entity>
+	<entity id="less">
+		<locale lang="fr">moins de</locale>
+		<locale lang="en">less than</locale>
+	</entity>
+</localization>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+
+	<systemfolder module="list" relatedmodule="ecomfilters">
+		<staticlist listid="modules_ecomfilters/moreless"
+			description="&amp;modules.ecomfilters.list.more-less-description;"
+			label="&amp;modules.ecomfilters.list.more-less-label;">			
+			<staticitem value="more" label="&amp;modules.ecomfilters.list.more;" />
+			<staticitem value="less" label="&amp;modules.ecomfilters.list.less;" />
+		</staticlist>
+	</systemfolder>
+</script>

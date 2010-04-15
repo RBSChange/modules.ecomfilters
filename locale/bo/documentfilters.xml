@@ -75,7 +75,7 @@
 		<locale lang="fr">last cart modification period</locale>
 	</entity>
 	<entity id="lastcartupdateperiodfilter-text">
-		<locale lang="fr">les clients qui ont abandonné leur panier depuis {count} {unit}</locale>
-		<locale lang="en">having abandoned their cart since {count} {unit}</locale>
+		<locale lang="fr">les clients qui ont abandonné leur panier depuis {type} {count} {unit}</locale>
+		<locale lang="en">having abandoned their cart for {type} {count} {unit}</locale>
 	</entity>
 </localization>

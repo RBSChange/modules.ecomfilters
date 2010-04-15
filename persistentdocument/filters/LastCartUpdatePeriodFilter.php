@@ -11,6 +11,11 @@ class ecomfilters_LastCartUpdatePeriodFilter extends f_persistentdocument_Docume
 		$info->setListId('modules_filter/dateunits');
 		$countParameter = new f_persistentdocument_DocumentFilterValueParameter($info);
 		$parameters['unit'] = $countParameter;
+		
+		$info = new BeanPropertyInfoImpl('type', 'String');
+		$info->setListId('modules_ecomfilters/moreless');
+		$countParameter = new f_persistentdocument_DocumentFilterValueParameter($info);
+		$parameters['type'] = $countParameter;
 		$this->setParameters($parameters);
 	}
 	
@@ -27,10 +32,15 @@ class ecomfilters_LastCartUpdatePeriodFilter extends f_persistentdocument_Docume
 	 */
 	public function getQuery()
 	{
+		$type = $this->getParameter('type')->getValueForQuery();
 		$count = $this->getParameter('count')->getValueForQuery();
 		$unit = $this->getParameter('unit')->getValueForQuery();
 		$date = filter_DateFilterHelper::getReferenceDate($unit, $count);
-		return customer_CustomerService::getInstance()->createQuery()->add(Restrictions::lt('lastCartUpdate', $date));
+		if ($type == "more")
+		{
+			return customer_CustomerService::getInstance()->createQuery()->add(Restrictions::lt('lastCartUpdate', $date));
+		}
+		return customer_CustomerService::getInstance()->createQuery()->add(Restrictions::gt('lastCartUpdate', $date));
 	}
 	
 	/**
@@ -40,10 +50,15 @@ class ecomfilters_LastCartUpdatePeriodFilter extends f_persistentdocument_Docume
 	{
 		if ($value instanceof customer_persistentdocument_customer)
 		{
+			$type = $this->getParameter('type')->getValueAsText();
 			$count = $this->getParameter('count')->getValueForQuery();
 			$unit = $this->getParameter('unit')->getValueForQuery();
 			$date = filter_DateFilterHelper::getReferenceDate($unit, $count);
-			return $value->getLastcartupdate() < $date;
+			if ($type == "more")
+			{
+				return $value->getLastcartupdate() < $date;
+			}
+			return $value->getLastcartupdate() > $date;
 		}
 		return false;
 	}
