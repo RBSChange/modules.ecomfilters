@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <localization>
-
 	<entity id="creationdateperiodfilter-label">
 		<locale lang="fr">période d'inscription</locale>
 		<locale lang="en">clients having registered in a given period</locale>
@@ -9,9 +8,7 @@
 		<locale lang="fr">les clients qui se sont inscrits {period}</locale>
 		<locale lang="en">clients having registered in {period}</locale>
 	</entity>
-	
-	
-	
+		
 	<entity id="orderlinefilter-label">
 		<locale lang="fr">propriété d'une ligne de commande</locale>
 		<locale lang="en">filter on an ordered item</locale>
@@ -21,8 +18,6 @@
 		<locale lang="en">having {count} {status} orders with the item {field}</locale>
 	</entity>
 	
-	
-	
 	<entity id="creationdateperiodorderfilter-label">
 		<locale lang="fr">période de la commande</locale>
 	</entity>
@@ -30,28 +25,33 @@
 		<locale lang="fr">les commandes qui ont été passées {period}</locale>
 	</entity>
 	
-	
-	
-	<entity id="CustomerInGroupCartFilter-label">
+	<entity id="customerInGroupCartFilter-label">
 		<locale lang="fr">clients appartenant à un groupe</locale>
 	</entity>
-	<entity id="CustomerInGroupCartFilter-text">
+	<entity id="customerInGroupCartFilter-text">
 		<locale lang="fr">les paniers des clients appartenant à l'un des groupes suivants : {group}</locale>
 	</entity>
-	<entity id="parameter.Cart-customer-group">
+	<entity id="parameter.cart-customer-group">
 		<locale lang="fr">Groupe client</locale>
 	</entity>
 	
+	<entity id="customerHavingAlertOnProductFilter-label">
+		<locale lang="fr">ayant placé une alerte sur un produit donné</locale>
+	</entity>
+	<entity id="customerHavingAlertOnProductFilter-text">
+		<locale lang="fr">les clients ayant placé une alerte sur {product}</locale>
+	</entity>
+	<entity id="parameter.product">
+		<locale lang="fr">produit</locale>
+	</entity>
 	
-	
-	<entity id="CustomerPropertyCartFilter-label">
+	<entity id="customerPropertyCartFilter-label">
 		<locale lang="fr">informations du client</locale>
 	</entity>
-	<entity id="CustomerPropertyCartFilter-text">
+	<entity id="customerPropertyCartFilter-text">
 		<locale lang="fr">les paniers des clients qui ont {field}</locale>
 		<locale lang="en">clients having {field}</locale>
 	</entity>
-	
 	
 	<entity id="usedcouponcountfilter-label">
 		<locale lang="fr">nombre de coupons utilisés</locale>
@@ -70,6 +70,7 @@
 		<locale lang="fr">les clients qui ont {date}</locale>
 		<locale lang="en">having  {date}</locale>
 	</entity>
+	
 	<entity id="lastcartupdateperiodfilter-label">
 		<locale lang="fr">période d'abandon du panier</locale>
 		<locale lang="fr">last cart modification period</locale>
