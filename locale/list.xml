@@ -16,4 +16,24 @@
 		<locale lang="fr">moins de</locale>
 		<locale lang="en">less than</locale>
 	</entity>
+	<entity id="productalerttype-description">
+		<locale lang="fr">types d'alerte produit</locale>
+		<locale lang="en">product alert types</locale>
+	</entity>
+	<entity id="productalerttype-label">
+		<locale lang="fr">types d'alerte produit</locale>
+		<locale lang="en">product alert types</locale>
+	</entity>
+	<entity id="productalerttype-all">
+		<locale lang="fr">tous les types</locale>
+		<locale lang="en">all types</locale>
+	</entity>
+	<entity id="productalerttype-price">
+		<locale lang="fr">prix</locale>
+		<locale lang="en">price</locale>
+	</entity>
+	<entity id="productalerttype-availability">
+		<locale lang="fr">disponibilité</locale>
+		<locale lang="en">availability</locale>
+	</entity>
 </localization>

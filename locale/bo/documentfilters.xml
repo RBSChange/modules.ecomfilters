@@ -39,10 +39,13 @@
 		<locale lang="fr">ayant placé une alerte sur un produit donné</locale>
 	</entity>
 	<entity id="customerHavingAlertOnProductFilter-text">
-		<locale lang="fr">les clients ayant placé une alerte sur {product}</locale>
+		<locale lang="fr">les clients ayant placé une alerte de type {alerttype} sur {product}</locale>
 	</entity>
 	<entity id="parameter.product">
 		<locale lang="fr">produit</locale>
+	</entity>
+	<entity id="parameter.alerttype">
+		<locale lang="fr">type d'alerte</locale>
 	</entity>
 	
 	<entity id="customerPropertyCartFilter-label">

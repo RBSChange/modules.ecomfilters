@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+
+	<systemfolder module="list" relatedmodule="ecomfilters">
+		<staticlist listid="modules_ecomfilters/productalerttype"
+			description="&amp;modules.ecomfilters.list.productalerttype-description;"
+			label="&amp;modules.ecomfilters.list.productalerttype-label;">			
+			<staticitem value="all" label="&amp;modules.ecomfilters.list.productalerttype-all;" />
+			<staticitem value="price" label="&amp;modules.ecomfilters.list.productalerttype-price;" />
+			<staticitem value="availability" label="&amp;modules.ecomfilters.list.productalerttype-availability;" />
+		</staticlist>
+	</systemfolder>
+</script>

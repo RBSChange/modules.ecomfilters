@@ -7,6 +7,7 @@ class ecomfilters_Setup extends object_InitDataSetup
 	public function install()
 	{
 		$this->executeModuleScript('list.xml');
+		$this->executeModuleScript('alerttypelist.xml');
 	}
 
 	/**
