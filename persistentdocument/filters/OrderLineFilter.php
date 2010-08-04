@@ -38,7 +38,7 @@ class ecomfilters_OrderLineFilter extends customer_OrderFilterBase
 	 */
 	public function getQuery()
 	{
-		$query = customer_CustomerService::getInstance()->createQuery()->setFetchColumn('this');
+		$query = customer_CustomerService::getInstance()->createQuery();
 		$subQuery = $query->createCriteria('order');
 		$subQuery2 = $subQuery->createCriteria('line');
 		$subQuery2->add($this->getParameter('field')->getValueForQuery());
