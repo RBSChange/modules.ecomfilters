@@ -65,13 +65,27 @@
 		<locale lang="en">having used {count} coupons</locale>
 	</entity>
 	
+	<entity id="lastabandonedorderfilter-label">
+		<locale lang="fr">date de dernier abandon de commande</locale>
+	</entity>
+	<entity id="lastabandonedorderfilter-text">
+		<locale lang="fr">les clients qui ont {date}</locale>
+	</entity>
+	
+	<entity id="lastabandonedorderperiodfilter-label">
+		<locale lang="fr">période d'abandon de commande</locale>
+	</entity>
+	<entity id="lastabandonedorderperiodfilter-text">
+		<locale lang="fr">les clients qui ont abandonné leur commande depuis {type} {count} {unit}</locale>
+	</entity>
+	
 	<entity id="lastcartupdatefilter-label">
 		<locale lang="fr">date de dernière modification du panier</locale>
 		<locale lang="fr">last cart modification date</locale>
 	</entity>
 	<entity id="lastcartupdatefilter-text">
 		<locale lang="fr">les clients qui ont {date}</locale>
-		<locale lang="en">having  {date}</locale>
+		<locale lang="en">having {date}</locale>
 	</entity>
 	
 	<entity id="lastcartupdateperiodfilter-label">

@@ -1,11 +1,11 @@
 <?php
-class ecomfilters_LastCartUpdateFilter extends f_persistentdocument_DocumentFilterImpl
+class ecomfilters_LastAbandonedOrderFilter extends f_persistentdocument_DocumentFilterImpl
 {
 	public function __construct()
 	{
 		$parameters = array();
 		$model = f_persistentdocument_PersistentDocumentModel::getInstanceFromDocumentModelName("modules_customer/customer");
-		$info = $model->getBeanPropertyInfo('lastCartUpdate');
+		$info = $model->getBeanPropertyInfo('lastAbandonedOrderDate');
 		$dateParameter = f_persistentdocument_DocumentFilterRestrictionParameter::getNewInstance($info);
 		$parameters['date'] = $dateParameter;
 		$this->setParameters($parameters);
@@ -37,7 +37,7 @@ class ecomfilters_LastCartUpdateFilter extends f_persistentdocument_DocumentFilt
 			$param = $this->getParameter('date');
 			$restriction = $param->getRestriction();
 			$val = $param->getParameter()->getValue();
-			$testVal = $this->getTestValueForPropertyName($val, 'lastCartUpdate');
+			$testVal = $this->getTestValueForPropertyName($val, 'lastAbandonedOrderDate');
 			return $this->evalRestriction($testVal, $restriction, $val);
 		}
 		return false;
